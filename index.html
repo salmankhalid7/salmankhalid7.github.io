@@ -37,18 +37,23 @@
     </div>
   </section>
 
-  <!-- Gallery section -->
-  <section class="gallery">
-    <h1>Our Campus Gallery</h1>
-    <div class="gallery-grid">
-      <img src="images/gallery1.jpg" alt="Classroom">
-      <img src="images/gallery2.jpg" alt="Students">
-      <img src="images/gallery3.jpg" alt="Event">
-      <img src="images/gallery4.jpg" alt="Library">
-      <img src="images/gallery5.jpg" alt="Computer Lab">
-      <img src="images/gallery6.jpg" alt="Lecture">
-    </div>
-  </section>
+<section class="gallery">
+  <h1>Our Campus Gallery</h1>
+  <div class="gallery-grid">
+    <img src="images/cafeteria.png" alt="Classroom" onclick="openModal(this)">
+    <img src="images/students.jpg" alt="Students" onclick="openModal(this)">
+    <img src="images/event.jpg" alt="Event" onclick="openModal(this)">
+    <img src="images/sports.jpg" alt="Sports" onclick="openModal(this)">
+    <img src="/images/ground.jpg" alt="Lecture" onclick="openModal(this)">
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
   
   <!-- Testimonial section -->
   <section class="testimonials">
@@ -56,11 +61,11 @@
     <div class="testimonial-container">
         <div class="testimonial">
             <div class="student-image">
-                <img src="path_to_image/ali.jpg" alt="Ali Khan">
+                <img src="images/SALMAN KHALID.jpg" alt="SALMAN KHALID">
             </div>
             <p>"Ishaq Academy has been a life-changing experience for me. The teachers are very supportive, and the courses are top-notch!"</p>
-            <h3>Ali Khan</h3>
-            <p class="location">Student - Lahore</p>
+            <h3>SALMAN KHALID</h3>
+            <p class="location">Student - WEB DEVELOPMENT</p>
             <div class="stars">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -71,11 +76,11 @@
         </div>
         <div class="testimonial">
             <div class="student-image">
-                <img src="path_to_image/sara.jpg" alt="Sara Iqbal">
+                <img src="/images/jawad.jpg" alt="JAWAD ALI">
             </div>
             <p>"A wonderful experience! The academy's approach to education is very practical and focuses on real-world knowledge."</p>
-            <h3>Sara Iqbal</h3>
-            <p class="location">Student - Faisalabad</p>
+            <h3>JAWAD ALI</h3>
+            <p class="location">Student - ECAT</p>
             <div class="stars">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -86,11 +91,11 @@
         </div>
         <div class="testimonial">
             <div class="student-image">
-                <img src="path_to_image/amir.jpg" alt="Amir Shah">
+                <img src="/images/junaid.jpg" alt="JUNAID SAJID">
             </div>
             <p>"I highly recommend Ishaq Academy! The lessons are engaging, and the staff goes above and beyond to ensure we succeed."</p>
-            <h3>Amir Shah</h3>
-            <p class="location">Student - Multan</p>
+            <h3>JUNAID SAJID</h3>
+            <p class="location">Student - INTERMEDIATE</p>
             <div class="stars">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -139,17 +144,17 @@
       <div class="contact-box">
         <i class="fas fa-phone-alt"></i>
         <h3>Phone</h3>
-        <p>+92 300 1234567</p>
+        <p>+92 333 4161223</p>
       </div>
       <div class="contact-box">
         <i class="fas fa-envelope"></i>
         <h3>Email</h3>
-        <p>info@ishaqacademy.pk</p>
+        <p>ishaqacademy@gmail.com</p>
       </div>
       <div class="contact-box">
         <i class="fas fa-map-marker-alt"></i>
         <h3>Location</h3>
-        <p>Model Town, Lahore, Punjab, Pakistan</p>
+        <p>MAIN DIYAL HOUSE,Canal Road,Lahore, Pakistan</p>
       </div>
     </div>
   </section>
@@ -164,7 +169,8 @@
     <div class="footer-column">
       <h3>Ishaq Academy</h3>
       <p>Empowering students with quality education and practical skills for a brighter future.</p>
-      <img src="https://via.placeholder.com/150x50?text=Ishaq+Academy" alt="Ishaq Academy Logo" class="footer-logo">
+      <img src="/images/LOGO (2) (1).png" alt="Ishaq Academy Logo" class="footer-logo">
+      <span>Ishaq Academy</span>
     </div>
 
     <!-- Quick Links -->
@@ -181,19 +187,21 @@
     <!-- Contact Info -->
     <div class="footer-column">
       <h4>Contact Us</h4>
-      <p><i class="fas fa-envelope"></i> info@ishaqacademy.com</p>
-      <p><i class="fas fa-phone-alt"></i> +92 123 4567890</p>
-      <p><i class="fas fa-map-marker-alt"></i> 123 Academy Road, Lahore, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> ishaqacademy@gmail.com</p>
+      <p><i class="fas fa-phone-alt"></i> +92 333 4161223</p>
+      <p><i class="fas fa-map-marker-alt"></i> MAIN DIYAL HOUSE,Canal Road,Lahore, Pakistan</p>
     </div>
 
     <!-- Social Media -->
     <div class="footer-column">
       <h4>Follow Us</h4>
       <div class="social-icons">
-        <a href="https://facebook.com/ishaqacademy" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/ishaqacademy" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com/ishaqacademy" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/ishaqacademy" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/IshaqAcademy/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/ishaqacademy_14/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/c/ISHAQACADEMY" target="_blank"><i class="fab fa-youtube"></i></a>
+        <br>
+        <span>Social Media</span>  
+
       </div>
     </div>
 
